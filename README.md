@@ -6,6 +6,10 @@ moc-lyrics is a simple bash script that fetches the lyrics of current song playi
 ### Dependencies :
 - Python (v. 3+) [python] is an interpreted, interactive, object-oriented programming language. It is available on most linux distributions and can be easily installed via the package manager. Be careful to install version 3, as version 2.7 is still quite popular.
 - curl - [curl] is a command line tool and library for transferring data with URL syntax. curl is available in repositories of almost every Linux distribution so you can install curl easily via your package manager.
+- vim - [vim] is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems. It is available for every unix platform, if you don't want to use it just replace the `vim -` string with `less`, like so:
+```sh
+$ sed -i -e 's/vim -/less/' moc-lyrics
+```
 
 
 ### Installation :
@@ -39,7 +43,8 @@ This work (<span property="dct:title">moc-lyrics</span>, by [<span property="dct
 
 [original-project]:https://github.com/hakerdefo/moc-lyrics
 [python]:https://python.org
-[curl]:http://curl.haxx.se
-[MOC]:http://moc.daper.net
+[curl]:https://curl.haxx.se
+[vim]:https://vim.org
+[MOC]:https://moc.daper.net
 [Federico Builes]:https://github.com/febuiles
 [makeitpersonal]:https://github.com/febuiles/makeitpersonal
