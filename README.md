@@ -1,21 +1,28 @@
 # moc-lyrics
 moc-lyrics is a simple bash script that fetches the lyrics of current song playing in MOC (music on console) music player.
+*This version of `moc-lyrics` has been adapted from the original script, which is itself a minor adjustment of the original documentation for [makeitpersonal]. Feel free to check out the original version of this project (here)[original-project]*
 
 
 ### Dependencies :
-- Perl - Perl (Practical Extraction and Reporting Language) originally developed by Larry Wall is a family of high-level, general-purpose, interpreted, dynamic programming languages. [Perl] is available in repositories of almost every Linux distribution under the sun. Use your distribution's package manager to install it.
+- Python (v. 3+) [python] is an interpreted, interactive, object-oriented programming language. It is available on most linux distributions and can be easily installed via the package manager. Be careful to install version 3, as version 2.7 is still quite popular.
 - curl - [curl] is a command line tool and library for transferring data with URL syntax. curl is available in repositories of almost every Linux distribution so you can install curl easily via your package manager.
 
 
 ### Installation :
-Very easy. Download [moc-lyrics-master.zip], extract it, and simply copy 'moc-lyrics' file to '/usr/local/bin/' directory,
- ```sh
-$ sudo cp moc-lyrics /usr/local/bin/
+Very easy.
+Clone the project:
+``` sh
+$ git clone https://github.com/mabbamOG/moc-lyrics.git
 ```
-Next make it executable,
+Next copy the bash script to your executables' directory:
+ ```sh
+$ sudo cp moc-lyrics/moc-lyrics /usr/local/bin/
+```
+And make it executable:
 ```sh
 $ sudo chmod a+x /usr/local/bin/moc-lyrics
 ```
+Done :)
 
 
 ### Usage :
@@ -28,11 +35,11 @@ Run moc-lyrics and it will fetch and print lyrics of the song currently playing 
 
 ### License :
 [![Public Domain Mark](http://i.creativecommons.org/p/mark/1.0/88x31.png)](http://creativecommons.org/publicdomain/mark/1.0/)  
-This work (<span property="dct:title">moc-lyrics</span>, by [<span property="dct:title">hakerdefo</span>](https://github.com/hakerdefo/moc-lyrics)), identified by [<span property="dct:title">hakerdefo</span>](https://hakerdefo.blogspot.com), is free of known copyright restrictions.
+This work (<span property="dct:title">moc-lyrics</span>, by [<span property="dct:title">mabbamOG</span>](https://github.com/mabbamOG/moc-lyrics)), identified by [<span property="dct:title">mabbamOG</span>](https://github.com/mabbamOG), is free of known copyright restrictions.
 
-[perl]:https://www.perl.org
+[original-project]:https://github.com/hakerdefo/moc-lyrics
+[python]:https://python.org
 [curl]:http://curl.haxx.se
-[moc-lyrics-master.zip]:https://github.com/hakerdefo/moc-lyrics/archive/master.zip
 [MOC]:http://moc.daper.net
 [Federico Builes]:https://github.com/febuiles
 [makeitpersonal]:https://github.com/febuiles/makeitpersonal
